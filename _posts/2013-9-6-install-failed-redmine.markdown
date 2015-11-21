@@ -1,27 +1,41 @@
 ---
 layout: post
-title:  "Redmineのmigrate時にObject is not missing constant Project!とエラーが出る"
+title:  "passenger-install-apache2-moduleが失敗する件について"
 date:   2013-9-6
 author: kter
 category: Server
-tags: [redmine, mysql]
+tags: [ruby, gem, passenger]
 ---
-Redmineのインストール時、migrateを行うと
 
-Object is not missing constant Project!
-
-と表示された場合。
-
-/etc/ld.so.confに
+Passengerをインストールするとき、passenger-install-apache2-moduleを実行しますが、Apacheをソースインストールしていたりすると、次のようなエラーが出てうまくインストールできません。
 
 ```
-/usr/local/mysql/lib64/
+Checking for required software...
+
+* GNU C++ compiler... found at /usr/bin/g++
+* Curl development headers with SSL support... not found
+* OpenSSL development headers... found
+* Zlib development headers... found
+* Ruby development headers... found
+* OpenSSL support for Ruby... found
+* RubyGems... found
+* Rake... found at /usr/bin/rake
+* rack... found
+* Apache 2... not found
+* Apache 2 development headers... not found
+* Apache Portable Runtime (APR) development headers... not found
+* Apache Portable Runtime Utility (APU) development headers... not found
 ```
 
-と追加し、/sbin/ldconfigを実行する(/usr/local/mysql/lib64/がなければ/usr/local/mysql/lib/かな）
 
+上記例では
+```
+* Curl development headers with SSL support... not found
+```
+とあるので、yumかなにかでcurl-develをインストールします(yum install curl-devel)。
 
+Apache関係はソースインストールしたせいで、パスを見失っているだけなので、下記コマンドで場所を教えてあげます
 
-以上はデータベースにMySQL（バイナリインストール）を使った場合。
-
-要はデータベースのライブラリがないということらしい。むがー
+```
+passenger-install-apache2-module --apxs2-path /usr/local/apache2/bin/apxs --apr-config-path /usr/local/apache2/bin/apr-1-config
+```

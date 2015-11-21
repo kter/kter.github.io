@@ -48,3 +48,6 @@
 
 - slug: mysql
   name: MySQL
+
+- slug: passenger
+  name: Passenger
