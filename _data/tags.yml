@@ -42,3 +42,9 @@
 
 - slug: aws
   name: AWS
+
+- slug: redmine
+  name: Redmine
+
+- slug: mysql
+  name: MySQL
