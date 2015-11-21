@@ -39,3 +39,6 @@
 
 - slug: postgresql
   name: PostgreSQL
+
+- slug: aws
+  name: AWS
