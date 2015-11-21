@@ -30,3 +30,12 @@
 
 - slug: SSH
   name: SSH
+
+- slug: ruby
+  name: Ruby
+
+- slug: gem
+  name: gem
+
+- slug: postgresql
+  name: PostgreSQL
