@@ -4,7 +4,7 @@ title:  "ERROR: While executing gem ... (NoMethodError) undefined method `map' f
 date:   2013-7-3
 author: kter
 category: Server
-tags: [ruby, gem]
+tags: [Ruby, gem]
 ---
 ```
 % sudo gem install hogehoge_gem

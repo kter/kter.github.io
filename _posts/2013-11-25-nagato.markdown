@@ -4,7 +4,7 @@ title:  "長門"
 date:   2013-11-25
 author: kter
 category: 艦これ
-tags: [construction]
+tags: [建造]
 ---
 念願の長門を手に入れたぞ！
 

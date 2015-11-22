@@ -4,3 +4,5 @@
   name: Server
 - slug: kancolle
   name: 艦これ
+- slug: aws
+  name: AWS

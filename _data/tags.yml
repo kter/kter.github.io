@@ -54,3 +54,9 @@
 
 - slug: construction
   name: 建造
+
+- slug: ec2
+  name: EC2
+
+- slug: ebs
+  name: EBS

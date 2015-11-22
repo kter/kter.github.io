@@ -4,7 +4,7 @@ title:  "passenger-install-apache2-moduleが失敗する件について"
 date:   2013-9-6
 author: kter
 category: Server
-tags: [ruby, gem, passenger]
+tags: [Ruby, gem, Passenger]
 ---
 
 Passengerをインストールするとき、passenger-install-apache2-moduleを実行しますが、Apacheをソースインストールしていたりすると、次のようなエラーが出てうまくインストールできません。

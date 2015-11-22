@@ -4,7 +4,7 @@ title:  "s3cmdのデフォルトリージョンを東京にする"
 date:   2013-8-30
 author: kter
 category: Server
-tags: [s3cmd, aws]
+tags: [s3cmd, AWS]
 ---
 s3cmdではデフォルトでUSリージョンが設定されます。
 
