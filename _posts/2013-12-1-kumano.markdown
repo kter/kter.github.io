@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "熊野遂に来たる"
+date:   2013-12-1
+author: kter
+category: 艦これ
+tags: [建造]
+---
+熊野がついに実装されました
+
+よそ見しながら建造してたら、聞きなれない声が聞こえたので、ふと画面を見たらそこに熊野がいました
+
+![熊野](http://img.kter.jp/kancolle-123.png)
+
