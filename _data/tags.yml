@@ -31,32 +31,32 @@
 - slug: SSH
   name: SSH
 
-- slug: ruby
+- slug: Ruby
   name: Ruby
 
 - slug: gem
   name: gem
 
-- slug: postgresql
+- slug: PostgreSQL
   name: PostgreSQL
 
-- slug: aws
+- slug: AWS
   name: AWS
 
-- slug: redmine
+- slug: Redmine
   name: Redmine
 
-- slug: mysql
+- slug: MySQL
   name: MySQL
 
-- slug: passenger
+- slug: Passenger
   name: Passenger
 
-- slug: construction
+- slug: 建造
   name: 建造
 
-- slug: ec2
+- slug: EC2
   name: EC2
 
-- slug: ebs
+- slug: EBS
   name: EBS
