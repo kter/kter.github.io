@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "衣笠さん"
+date:   2013-11-26
+author: kter
+category: 艦これ
+tags: [建造]
+---
+ついに衣笠さんが実装されました。
+
+![衣笠](http://img.kter.jp/kancolle-108.png)
+
+
+
+
+改二(だっけ？)にするぜー
