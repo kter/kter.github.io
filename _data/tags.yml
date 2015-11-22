@@ -60,3 +60,6 @@
 
 - slug: EBS
   name: EBS
+
+- slug: Zabbix
+  name: Zabbix
