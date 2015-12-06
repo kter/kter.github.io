@@ -22,7 +22,7 @@ theme:
   header_text_feature_image: img/sample_feature_img.png
   place_holder_image: img/sample_feature_img.png
   footer_text: >
-   <a href="https://yoursite.com">YOUR TITLE</a> 
+   <a href="http://blog.kter.jp/">ことえりブログ</a> 
 
   # Icons
   rss: false
@@ -48,7 +48,7 @@ theme:
   youtube:
 
   # Scripts
-  google_analytics: UA-47788961-1 # Tracking ID, e.g. "UA-000000-01"
+  google_analytics: "UA-47788961-1" # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname:
   katex: true # Enable if using math markup
 
