@@ -1,0 +1,16 @@
+---
+layout: post
+title: s3cmdでserver-side-encryptionを使うようにする
+author: kter
+category: Server
+tags: [AWS]
+comments: []
+---
+<p>s3cmdでserver-side-encryptionを使おうとして普通に--server-side-encryptionをオプションとしてつけても</p>
+<pre>s3cmd: error: no such option: --server-side-encryption</pre><br />
+と言われるだけでだめだった。</p>
+<p>その代わり、</p>
+<pre><code>--add-header=x-amz-server-side-encryption:AES256</code></pre><br />
+というオプションをつけるとちゃんと暗号化された。</p>
+<p>要するにこんな感じでコマンドを実行すると</p>
+<pre><code>s3cmd put --add-header=x-amz-server-side-encryption:AES256 uploadfile s3:&#47;&#47;bucketname&#47;</code></pre></p>

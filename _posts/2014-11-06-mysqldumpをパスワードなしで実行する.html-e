@@ -1,0 +1,13 @@
+---
+layout: post
+title: mysqldumpをパスワードなしで実行する
+author: kter
+categories: Server
+tags: MySQL
+---
+<p>cronなどでmysqldumpを実行したいけどパスワードをそのまま書くのはちょっと&hellip;という場合はパスワードをファイルに書き出し、それを読みこませることでパスワードの指定なしに実行できます。</p>
+<p>実行ユーザのホームディレクトリに.my.cnfという名前で下記3行を書きましょう。</p>
+<pre class="lang:default decode:true" title=".my.cnf">[mysqldump]<br />
+user=実行ユーザ<br />
+password=pass</pre><br />
+これでOK</p>

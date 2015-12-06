@@ -1,0 +1,29 @@
+---
+layout: post
+title: muninから09:06にメールが届く件について
+author: kter
+category: Server
+tags: Munin
+---
+<p>Muninから9時6分頃にこんなメールが来るようになった</p>
+<pre class="lang:default decode:true">[FATAL ERROR] Lock already exists: &#47;var&#47;run&#47;munin&#47;munin-update.lock. Dying.<br />
+ at &#47;usr&#47;share&#47;perl5&#47;vendor_perl&#47;Munin&#47;Master&#47;Update.pm line 128</pre><br />
+&nbsp;</p>
+<p>これは9時ジャストに行われているMuninの処理が次の9時5分になっても終わっていないため送信されている。</p>
+<p>なぜ終わっていないのかというと、午前9時に日毎、週ごと、年ごとのグラフが更新されているらしかった。</p>
+<p>生成されるグラフの数が多いためこのようなことが起こっているのだろう。</p>
+<p>&nbsp;</p>
+<p>Muninの処理は各サーバから情報を収集、グラフの生成、HTMLの生成の3つが行われており、通常は&#47;usr&#47;bin&#47;munin-cronがその3つの処理を個別に呼び出している。</p>
+<p>&nbsp;</p>
+<p>ということなので、9時5分に関しては情報の収集だけ行うことにした。</p>
+<p>&#47;etc&#47;cron.d&#47;muninは下記のようになった。</p>
+<pre class="lang:default decode:true ">$ cat &#47;etc&#47;cron.d&#47;munin<br />
+#<br />
+# cron-jobs for munin<br />
+#</p>
+<p>MAILTO=root</p>
+<p>*&#47;5 10-23,0-8  * * *     munin test -x &#47;usr&#47;bin&#47;munin-cron &amp;&amp; &#47;usr&#47;bin&#47;munin-cron<br />
+0,10,15,20,25,30,35,40,45,50,55 9 * * *     munin test -x &#47;usr&#47;bin&#47;munin-cron &amp;&amp; &#47;usr&#47;bin&#47;munin-cron<br />
+5 9 * * *     munin test -x &#47;usr&#47;bin&#47;munin-cron &amp;&amp; &#47;usr&#47;share&#47;munin&#47;munin-update</pre><br />
+&nbsp;</p>
+<p>以上。</p>

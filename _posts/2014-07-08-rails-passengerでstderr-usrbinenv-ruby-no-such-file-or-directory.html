@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'Rails Passengerでstderr: &#47;usr&#47;bin&#47;env: ruby No such file or directory'
+author: kter
+category: Server
+tags: [Ruby, Passenger, Apache]
+---
+<p>passengerを組み込んだapacheのerror_logに次の行が表示される時の対処</p>
+<blockquote><p>App 7560 stderr: &#47;usr&#47;bin&#47;env:<br />
+App 7560 stderr: ruby<br />
+App 7560 stderr: : No such file or directory</blockquote><br />
+apacheからパスが通っていないので、&#47;etc&#47;sysconfig&#47;httpdに次の行を追記します。</p>
+<blockquote><p>export PATH=&#47;usr&#47;local&#47;bin:$PATH</blockquote><br />
+パスは適宜変更してください。</p>

@@ -6,3 +6,11 @@
   name: 艦これ
 - slug: aws
   name: AWS
+- slug: gadget
+  name: Gadget
+- slug: rails
+  name: Rails
+- slug: daily
+  name: 日記
+- slug: mac
+  name: Mac

@@ -1,0 +1,33 @@
+---
+layout: post
+title: MuninのMySQLプラグイン有効方法
+author: kter
+category: Server
+tags: [MySQL, Munin]
+---
+<p>初期状態ではMuninがMySQLのRootアカウントを使用してデータを収集しようとするので失敗する。<br />
+そのためMuninのデータ収集用MySQLアカウントを作成し、そのアカウントでデータ収集するよう設定する必要がある。</p>
+<p>専用MySQLアカウント作成</p>
+<pre class="wrap:true lang:default decode:true">mysql> CREATE USER munin@127.0.0.1 IDENTIFIED BY 'password';<br />
+mysql> GRANT SUPER,PROCESS ON *.* TO munin@127.0.0.1;<br />
+mysql> GRANT SELECT ON mysql.* TO munin@127.0.0.1;<br />
+mysql> FLUSH PRIVILEGES;</pre><br />
+&nbsp;</p>
+<p>専用MySQLアカウントを使用するようMuninを設定</p>
+<p>&nbsp;</p>
+<pre class="wrap:true lang:default decode:true">vim &#47;etc&#47;munin&#47;plugin-conf.d&#47;mysql<br />
+chmod 400 &#47;etc&#47;munin&#47;plugin-conf.d&#47;mysql<br />
+cat &#47;etc&#47;munin&#47;plugin-conf.d&#47;mysql<br />
+[mysql_*]<br />
+env.mysqlconnection DBI:mysql:mysql;host=127.0.0.1;port=3306<br />
+env.mysqluser munin<br />
+env.mysqlpassword password</pre><br />
+&nbsp;</p>
+<p>設定の確認と反映</p>
+<pre class="wrap:true lang:default decode:true ">munin-node-configure --suggest<br />
+munin-node-configure --shell 2>&amp;1 | grep mysql | &#47;bin&#47;bash<br />
+service munin-node restart</pre><br />
+&nbsp;</p>
+<p>&nbsp;</p>
+<p>参考URL:</p>
+<p>http:&#47;&#47;alexcline.net&#47;2013&#47;07&#47;12&#47;setting-up-the-mysql_-plugin-in-munin&#47;</p>

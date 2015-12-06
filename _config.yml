@@ -17,7 +17,7 @@ theme:
   visiblewords: 500
   # Header and footer text
   header_text: >
-     リニューアルオープン準備中
+     
 
   header_text_feature_image: img/sample_feature_img.png
   place_holder_image: img/sample_feature_img.png
@@ -71,7 +71,7 @@ theme:
 enforce_ssl: "fengzhichu.com"
 paginate: 5
 paginate_path: "blog/page:num"
-permalink: fengzhichu-theme/blog/:title/  #Delete preurl 'fengzhichu-theme/' if used for your personal site.
+permalink: blog/:title/  #Delete preurl 'fengzhichu-theme/' if used for your personal site.
 
 # Posted in ... with ...
 sechby: 

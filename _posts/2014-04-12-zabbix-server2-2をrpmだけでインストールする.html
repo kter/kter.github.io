@@ -1,0 +1,27 @@
+---
+layout: post
+title: Zabbix-Server2.2をRPMだけでインストールする
+author: kter
+category: Server
+tags: [Zabbix, RPM]
+---
+<p>やたら依存パッケージが多いのでメモを残しておきます。ちなみにMySQL使う場合です</p>
+<p>PHPをソースからインストールした場合は少し違うかも知れません</p>
+<pre>cd &#47;usr&#47;local&#47;src<br />
+wget http:&#47;&#47;repo.zabbix.com&#47;zabbix&#47;2.2&#47;rhel&#47;6&#47;x86_64&#47;zabbix-2.2.2-1.el6.x86_64.rpm<br />
+wget http:&#47;&#47;repo.zabbix.com&#47;zabbix&#47;2.2&#47;rhel&#47;6&#47;x86_64&#47;zabbix-web-2.2.2-1.el6.noarch.rpm<br />
+wget http:&#47;&#47;repo.zabbix.com&#47;zabbix&#47;2.2&#47;rhel&#47;6&#47;x86_64&#47;zabbix-web-japanese-2.2.2-1.el6.noarch.rpm<br />
+wget http:&#47;&#47;repo.zabbix.com&#47;zabbix&#47;2.2&#47;rhel&#47;6&#47;x86_64&#47;zabbix-server-2.2.2-1.el6.x86_64.rpm<br />
+wget http:&#47;&#47;repo.zabbix.com&#47;zabbix&#47;2.2&#47;rhel&#47;6&#47;x86_64&#47;zabbix-server-mysql-2.2.2-1.el6.x86_64.rpm<br />
+wget http:&#47;&#47;repo.zabbix.com&#47;zabbix&#47;2.2&#47;rhel&#47;6&#47;x86_64&#47;zabbix-web-mysql-2.2.2-1.el6.noarch.rpm<br />
+sudo yum install php-bcmath<br />
+sudo yum install OpenIPMI-libs unixODBC OpenIPMI OpenIPMI-libs vlgothic-p-fonts dejavu-sans-fonts glibc-devel gnutls-devel glibc-2.12-1.132.el6.i686 gnutls-2.8.5-13.el6_5.i686<br />
+wget http:&#47;&#47;pkgs.repoforge.org&#47;fping&#47;fping-3.9-1.el6.rf.x86_64.rpm<br />
+sudo rpm -rpm -ivh fping-3.9-1.el6.rf.x86_64.rpm<br />
+wget http:&#47;&#47;pkgs.repoforge.org&#47;iksemel&#47;iksemel-devel-1.4-1.el6.rf.i686.rpm<br />
+sudo rpm -ivh iksemel-devel-1.4-1.el6.rf.i686.rpm<br />
+wget http:&#47;&#47;pkgs.repoforge.org&#47;iksemel&#47;iksemel-1.4-1.el6.rf.i686.rpm<br />
+wget ftp:&#47;&#47;ftp.pbone.net&#47;mirror&#47;atrpms.net&#47;el6-x86_64&#47;atrpms&#47;stable&#47;libiksemel3-1.4-2_2.el6.x86_64.rpm<br />
+sudo rpm -ivh libiksemel3-1.4-2_2.el6.x86_64.rpm<br />
+sudo rpm -ivh zabbix-server-mysql-2.2.2-1.el6.x86_64.rpm zabbix-server-2.2.2-1.el6.x86_64.rpm<br />
+sudo rpm -ivh zabbix-web-*</pre></p>

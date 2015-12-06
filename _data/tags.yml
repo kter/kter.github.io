@@ -63,3 +63,46 @@
 
 - slug: Zabbix
   name: Zabbix
+
+- slug: Yum
+  name: Yum
+
+- slug: Vagrant
+  name: Vagrant
+
+- slug: S3
+  name: S3
+
+- slug: Munin
+  name: Munin
+
+- slug: OpenSSL
+  name: OpenSSL
+
+- slug: RPM
+  name: RPM
+
+- slug: Postfix
+  name: Postfix
+
+- slug: Redis
+  name: Redis
+
+- slug: PHP
+  name: PHP
+
+- slug: Apache
+  name: Apache
+
+- slug: 小旅行
+  name: 小旅行
+
+- slug: VirtualBox
+  name: VirtualBox
+
+- slug: Docker
+  name: Docker
+
+- slug: Nginx
+  name: Nginx
+

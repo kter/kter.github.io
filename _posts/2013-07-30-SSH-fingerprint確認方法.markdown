@@ -2,7 +2,7 @@
 layout: post
 title:  "SSH fingerprintの確認方法"
 date:   2013-7-30
-author: Author
+author: kter
 category: Server
 tags: [SSH]
 ---

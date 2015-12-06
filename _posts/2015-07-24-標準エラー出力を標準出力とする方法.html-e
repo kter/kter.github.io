@@ -1,0 +1,13 @@
+---
+layout: post
+title: 標準エラー出力を標準出力とする方法
+author: kter
+category: Server
+tags:
+---
+<p><span style="line-height: 1.714285714; font-size: 1rem;">標準エラー出力を標準出力とする方法</span></p>
+<p><span style="line-height: 1.714285714; font-size: 1rem;">例えばcrontabなどで、標準エラー出力にerrorという文字列があった場合メールを送信するという時は次のようにすれば良い</span></p>
+<p>何らかの処理 3>&#47;dev&#47;null 2>&amp;1 1>&amp;3 | grep -i error</p>
+<p>標準出力は3のファイルディスクリプタ経由で&#47;dev&#47;nullに送り、標準エラー出力は標準出力に送るという流れ。</p>
+<p>これで標準エラー出力は標準出力として送られるのでパイプで処理することができる。</p>
+<p>&nbsp;</p>
