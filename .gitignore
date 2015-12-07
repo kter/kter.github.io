@@ -6,3 +6,5 @@ _site/
 .jekyll-metadata
 vendor
 .bundle
+s3_website.yml
+

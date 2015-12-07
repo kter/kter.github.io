@@ -85,4 +85,5 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-exclude: [vendor]
+exclude: [vendor, 's3_website']
+
