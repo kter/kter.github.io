@@ -1,8 +1,0 @@
----
-layout: post
-title: redis, redis-sentinelが起動しない場合の対処
-author: kter
-category: Server
-tags: [Redis]
----
-<p>設定ファイルがredis, redis-sentinelユーザで書き込めないと起動しないっぽいです</p>
