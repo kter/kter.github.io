@@ -27,3 +27,11 @@ mysql> show create database DBname;
 ~~~Bash
 git config --global core.quotepath false
 ~~~
+
+## Vimで文字コードと改行コードの変更方法
+
+~~~
+set fileencoding=文字コード
+set fileformat=unixもしくはdos
+~~~
+
