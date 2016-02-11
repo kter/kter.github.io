@@ -3,7 +3,7 @@ layout: post
 title:  "DaisyDiskでMacのディスク空き容量を増やした"
 date:   2016-2-11
 author: kter
-category: Mac
+category: mac
 tags: []
 ---
 
