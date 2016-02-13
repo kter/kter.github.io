@@ -3,7 +3,7 @@ layout: post
 title:  "拡張海域1-6編成"
 date:   2016-1-14
 author: kter
-category: 艦これ
+category: kancolle
 tags: []
 ---
 
