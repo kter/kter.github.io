@@ -3,7 +3,7 @@ layout: post
 title:  "AWS EC2でタイムゾーンがUTCに戻る場合の対応"
 date:   2014-1-23
 author: kter
-category: AWS
+category: aws
 tags: [AWS, EC2]
 ---
 タイムゾーンって/usr/share/zoneinfo/Asia/Tokyoを/etc/localtimeにコピーするなりシンボリックリンクを貼るなりすると思うんですけど、EC2の場合はyum updateのタイミングでUTCに戻ってしまう場合があります。ありました

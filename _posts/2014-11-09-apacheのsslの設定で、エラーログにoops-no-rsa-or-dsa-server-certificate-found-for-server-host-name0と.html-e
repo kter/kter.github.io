@@ -1,9 +1,0 @@
----
-layout: post
-title: ApacheのSSLの設定で、エラーログにOops, no RSA or DSA server certificate found for 'server.host.name:0'?!と表示された時の対処
-author: kter
-category: Server
-tags: [Apache]
----
-<p>ApacheのSSLの設定で、エラーログにOops, no RSA or DSA server certificate found for 'server.host.name:0'?!と表示された時の対処</p>
-<p>設定していたVirtualHostにSSLEngine onを追記したらうまくいきました。</p>

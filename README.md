@@ -15,10 +15,13 @@ hosted in [Github pages](https://pages.github.com/).
 ![About page](img/Screenshot5.png)
 
 ## How to use it
-* Fork the [repo](https://github.com/fengzhichu/fengzhichu-theme).
+* Star & Fork the [repo](https://github.com/fengzhichu/fengzhichu-theme).
 * Rename repo as 'yourusername.github.io'.
+* You can delete gh-pages branch if you want.
+* Clone your <b>master branch</b> to local directory.
 * Custom the '_config.yml' to your style.
-* run jekyll serve -w.
+* Install jekyll can refer 'ruby_install_by_rvm.sh', modify to suit your need.
+* Run jekyll serve -w.
 
 ## Customization
 
@@ -61,13 +64,12 @@ permalink: /blog/tag/github-pages/
   ```
 
 ###Categories
-Similar as Tag.
+Similar as Tags.
 
 ## Thanks
 * Theme template: [type-theme](https://github.com/rohanchandra/type-theme)
 * Navigation bar: [ibireme's blog](http://blog.ibireme.com)
 * Features of Tag and Category: [HOW TO USE TAGS AND CATEGORIES ON GITHUB PAGES WITHOUT PLUGINS](http://www.minddust.com/post/tags-and-categories-on-github-pages/)
-* Image source: [Unsplash](https://unsplash.com)
 
 ## Enjoy
 - If you like, please star it. Thank you!

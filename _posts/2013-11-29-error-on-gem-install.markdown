@@ -3,7 +3,7 @@ layout: post
 title:  "railsのインストール中のエラー"
 date:   2013-11-29
 author: kter
-category: Server
+category: server
 tags: [Ruby, gem]
 ---
 railsをgem installしようとしたら次のエラーが
