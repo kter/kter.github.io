@@ -14,7 +14,7 @@ theme:
   yoursitetitle: ことえりブログ
   gravatar: # Email MD5 hash
   description: "used by search engines" # used by search engines
-  visiblewords: 500
+  visiblewords: 300
   # Header and footer text
   header_text: >
      
@@ -63,7 +63,7 @@ theme:
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
   google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
-  
+
   # Post navigation
   post_navigation: false
 
@@ -71,7 +71,7 @@ theme:
 enforce_ssl: "fengzhichu.com"
 paginate: 5
 paginate_path: "blog/page:num"
-permalink: blog/:title/  #Delete preurl 'fengzhichu-theme/' if used for your personal site.
+permalink: blog/:title/ 
 
 # Posted in ... with ...
 sechby: 
@@ -80,10 +80,12 @@ sechby:
 
 # BUILD SETTINGS
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: :compressed
 
 exclude: [vendor, 's3_website']
 
+gems:
+  - jekyll-paginate

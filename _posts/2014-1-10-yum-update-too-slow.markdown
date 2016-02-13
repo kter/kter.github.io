@@ -3,7 +3,7 @@ layout: post
 title:  "yum updateが異常に遅い"
 date:   2014-1-10
 author: kter
-category: Server
+category: server
 tags: [Yum]
 ---
 yum updateが異常に遅い(10kbpsほどの)マシンがあり、その解決に手間取ったので解決策をここに書き記しておきます。

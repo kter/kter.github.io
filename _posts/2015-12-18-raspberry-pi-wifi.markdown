@@ -3,7 +3,7 @@ layout: post
 title:  "Raspberry PiでWiFiに繋ぐ方法"
 date:   2015-12-18
 author: kter
-category: Server
+category: server
 tags: [Raspberry Pi]
 ---
 Raspberry PiでWiFiに繋ぐ方法

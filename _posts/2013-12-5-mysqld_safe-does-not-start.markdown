@@ -3,7 +3,7 @@ layout: post
 title:  "File './mysql-bin.index' not found (Errcode: 13)"
 date:   2013-12-5
 author: kter
-category: Server
+category: server
 tags: [MySQL]
 ---
 mysqlをソースからインストールして、mysqld_safeなどで起動しようとした時、次のエラーが発生

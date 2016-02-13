@@ -3,7 +3,7 @@ layout: post
 title:  "pg gemインストール時にPlease install the postgresql adapterとエラーが出る"
 date:   2013-7-1
 author: kter
-category: Server
+category: server
 tags: [Ruby, gem, PostgreSQL]
 ---
 

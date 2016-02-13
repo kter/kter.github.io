@@ -3,7 +3,7 @@ layout: post
 title:  "ERROR: While executing gem ... (NoMethodError) undefined method `map' for Gem::Specification:Class"
 date:   2013-7-3
 author: kter
-category: Server
+category: server
 tags: [Ruby, gem]
 ---
 ```

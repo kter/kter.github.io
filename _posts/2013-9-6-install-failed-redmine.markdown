@@ -3,7 +3,7 @@ layout: post
 title:  "passenger-install-apache2-moduleが失敗する件について"
 date:   2013-9-6
 author: kter
-category: Server
+category: server
 tags: [Ruby, gem, Passenger]
 ---
 

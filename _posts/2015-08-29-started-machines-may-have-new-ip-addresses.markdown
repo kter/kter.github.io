@@ -3,7 +3,7 @@ layout: post
 title: docker-machineでStarted machines may have new IP addresses. You may need to
   re-run the `docker-machine env` command.と言われる件について
 author: kter
-category: Server
+category: server
 tags: [VirtualBox, Docker]
 ---
 <p>docker-machineでStarted machines may have new IP addresses. You may need to re-run the `docker-machine env` command.と言われる件について</p>
