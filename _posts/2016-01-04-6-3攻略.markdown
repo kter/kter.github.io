@@ -3,7 +3,7 @@ layout: post
 title:  "6-3クリア"
 date:   2016-1-4
 author: kter
-category: 艦これ
+category: kancolle
 tags: []
 ---
 

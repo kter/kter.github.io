@@ -3,7 +3,7 @@ layout: post
 title:  "艦隊安全お飾り材料集め"
 date:   2015-12-27
 author: kter
-category: 艦これ
+category: kancolle
 tags: []
 ---
 艦隊安全お飾りの材料集め

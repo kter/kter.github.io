@@ -3,7 +3,7 @@ layout: post
 title:  "熊野遂に来たる"
 date:   2013-12-1
 author: kter
-category: 艦これ
+category: kancolle
 tags: [建造]
 ---
 熊野がついに実装されました

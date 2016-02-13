@@ -3,7 +3,7 @@ layout: post
 title:  "艦これ 2015年新春グラフィック"
 date:   2016-01-01
 author: kter
-category: 艦これ
+category: kancolle
 tags: []
 ---
 
