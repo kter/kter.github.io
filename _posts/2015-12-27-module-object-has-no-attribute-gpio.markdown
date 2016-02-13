@@ -3,7 +3,7 @@ layout: post
 title:  "AttributeError: 'module' object has no attribute 'GPIO'"
 date:   2015-12-27
 author: kter
-category: Server
+category: server
 tags: [Raspberry Pi]
 ---
 

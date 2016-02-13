@@ -3,7 +3,7 @@ layout: post
 title:  "EC2にEBSボリュームの追加する"
 date:   2013-11-26
 author: kter
-category: AWS
+category: aws
 tags: [AWS, EC2, EBS]
 ---
 EC2はEBSボリュームの追加を追加することができます。

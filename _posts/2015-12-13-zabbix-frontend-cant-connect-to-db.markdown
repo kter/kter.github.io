@@ -3,7 +3,7 @@ layout: post
 title:  "Zabbix FrontendでDBに接続できない場合の対処"
 date:   2015-12-13
 author: kter
-category: Server
+category: server
 tags: [Zabbix]
 ---
 zabbix-serverはDBに繋がるのにweb frontはDBがタイムアウトになる場合
