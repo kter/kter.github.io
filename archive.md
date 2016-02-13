@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Archive
-permalink: /archives/
+permalink: /Archives/
 ---
 <section id="archive">
   {%for post in site.posts %} 
