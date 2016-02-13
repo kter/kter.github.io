@@ -3,7 +3,7 @@ layout: post
 title:  "gemでpgをインストールしようとするとNo pg_config... trying anyway. If building fails, please try again withとエラーが表示される"
 date:   2013-7-1
 author: kter
-category: Server
+category: server
 tags: [Ruby, gem, PostgreSQL]
 ---
 gemでpgをインストールしようとするとNo pg_config... trying anyway. If building fails, please try again withとエラーが表示される

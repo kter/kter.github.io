@@ -3,7 +3,7 @@ layout: post
 title:  "EC2ストレージ容量が増えない"
 date:   2013-11-26
 author: kter
-category: [Server, AWS]
+category: [server, aws]
 tags: [AWS, EC2, EBS]
 ---
 EC2のインスタンスのEBS容量を増やして作成したのにdfコマンドで確認しても8GBしかない…

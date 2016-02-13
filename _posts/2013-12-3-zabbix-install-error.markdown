@@ -3,7 +3,7 @@ layout: post
 title:  "configure: error: Jabber library not found"
 date:   2013-12-3
 author: kter
-category: Server
+category: server
 tags: [Zabbix]
 ---
 Zabbix 1.8をソースからインストールした時次のエラーが発生。

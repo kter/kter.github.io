@@ -3,7 +3,7 @@ layout: post
 title:  "AWS 請求情報のみ閲覧できるIAMユーザ"
 date:   2016-1-28
 author: kter
-category: AWS
+category: aws
 tags: [AWS, IAM]
 ---
 
