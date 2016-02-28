@@ -80,6 +80,8 @@ sechby:
 
 # BUILD SETTINGS
 markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
 highlighter: rouge
 sass:
   sass_dir: _sass
