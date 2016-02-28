@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Jekyllでテーブルを表示できるようにする"
+date:   2016-2-28
+author: kter
+category: other
+tags: [jekyll]
+---
+
+Jekyllでテーブルを表示できるように設定する。
+
+_config.ymlに次の行を追加する。
+
+```
+redcarpet:
+   extensions: ["tables"]
+```
+
