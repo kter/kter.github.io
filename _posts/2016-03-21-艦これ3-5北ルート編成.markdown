@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "3-5北ルート編成"
+date:   2016-3-21
+author: kter
+category: kancolle
+tags: [艦これ艦隊編成]
+---
+
+3-5北ルート編成を自分用にメモ
+
+南ルートに比べて資源消費は多いけどその分大破撤退は少ないので攻略は楽
+
+![3-5編成](http://img.kter.jp/2016/0321/3-5fleet.png)
+
