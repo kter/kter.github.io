@@ -16,9 +16,9 @@ deployment:
   production:
     branch: master
     commands:
-      - aws s3 sync html/ s3://blog.kter.jp/ --delete
+      - aws s3 sync _site/ s3://blog.kter.jp/ --delete
   staging:
     branch: staging
     commands:
-      - aws s3 sync html/ s3://stg.blog.kter.jp/ --delete
+      - aws s3 sync _site/ s3://stg.blog.kter.jp/ --delete
 
