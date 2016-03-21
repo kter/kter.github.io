@@ -20,5 +20,5 @@ deployment:
   staging:
     branch: staging
     commands:
-      - aws s3 sync _site/ s3://stg.blog.kter.jp/ --delete
+      - aws s3 sync _site s3://stg.blog.kter.jp/ --delete
 
