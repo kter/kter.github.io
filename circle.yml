@@ -1,0 +1,24 @@
+machine:
+  timezone:
+    Asia/Tokyo
+
+dependencies:
+    override:
+        - sudo pip install awscli
+    post:
+        - aws configure set region ap-northeast-1
+
+test:
+  override:
+    - echo "All the tests are passed!!"
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - aws s3 sync html/ s3://blog.kter.jp/ --delete
+  staging:
+    branch: staging
+    commands:
+      - aws s3 sync html/ s3://stg.blog.kter.jp/ --delete
+
