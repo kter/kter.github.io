@@ -19,6 +19,7 @@ deployment:
   production:
     branch: master
     commands:
+      - jekyll build
       - aws s3 sync _site/ s3://blog.kter.jp/ --delete
   staging:
     branch: staging
