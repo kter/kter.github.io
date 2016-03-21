@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "水上打撃部隊南方へ！任務艦隊編成"
+date:   2016-3-21
+author: kter
+category: kancolle
+tags: [艦これ艦隊編成]
+---
+
+マンスリー任務の水上打撃部隊南方へ任務の艦隊編成です。
+
+高速戦艦不可で、戦艦3隻、軽巡1隻、他2隻で5-1ボス戦S勝利が条件です。
+
+![水上打撃部隊南方へ！任務編成](http://img.kter.jp/2016/0321/surface-attack-fleet-toward-south-quest-fleet.png)
+
